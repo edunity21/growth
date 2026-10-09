@@ -1,0 +1,47 @@
+[
+  {
+    "id": "musicalinus",
+    "title": "MUSICALINUS",
+    "subtitle": "뮤지컬 제작소",
+    "category": "공동 창작",
+    "description": "모둠별 이야기와 음악을 연결해 한 편의 학급 뮤지컬로 완성하는 공간입니다.",
+    "url": "https://edunity21.github.io/musicalinus/",
+    "qr": "assets/qr-musicalinus.png"
+  },
+  {
+    "id": "musetech",
+    "title": "음악산업탐구",
+    "subtitle": "음악과 진로를 잇는 플랫폼",
+    "category": "진로 탐구",
+    "description": "음악산업을 탐색하는 수업에 활용할 수 있는 온라인 자료입니다.",
+    "url": "https://edunity21.github.io/musetech/",
+    "qr": "assets/qr-musetech.png"
+  },
+  {
+    "id": "azalea",
+    "title": "진달래꽃",
+    "subtitle": "음악 감상 플랫폼",
+    "category": "음악 감상",
+    "description": "음악을 듣고 생각을 나누는 감상 활동에 활용합니다.",
+    "url": "https://edunity21.github.io/azalea/?teacher=1",
+    "qr": "assets/qr-azalea.png"
+  },
+  {
+    "id": "train",
+    "title": "판문열차",
+    "subtitle": "통일 노래 영상",
+    "category": "노래와 영상",
+    "description": "수업에서 함께 보고 들을 수 있는 통일 노래 영상입니다.",
+    "url": "https://youtu.be/JH1s2zt6rM4",
+    "qr": "assets/qr-train.png"
+  },
+  {
+    "id": "archive",
+    "title": "단위학교 아카이브",
+    "subtitle": "수업 기록을 모으는 공간",
+    "category": "기록과 공유",
+    "description": "학교의 수업과 활동 기록을 함께 살펴봅니다.",
+    "url": "https://edunity21.github.io/archive/#hub",
+    "qr": "assets/qr-archive.png"
+  }
+]

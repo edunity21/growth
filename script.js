@@ -10,7 +10,7 @@ nav.addEventListener('click', event => {
 });
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.focus();}});
 const progress=document.querySelector('.reading-progress');
-const chapters=[...document.querySelectorAll('.chapter')];
+const chapters=[...document.querySelectorAll('.chapter, #resources')];
 const links=[...nav.querySelectorAll('a')];
 let scheduled=false;
 function updateReading(){
@@ -34,3 +34,13 @@ for(const button of document.querySelectorAll('.photo-open'))button.addEventList
 dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
 dialog.addEventListener('close',()=>{document.body.style.overflow=previousOverflow;});
+
+const qrDialog=document.querySelector('.qr-dialog');
+for(const button of document.querySelectorAll('.qr-toggle'))button.addEventListener('click',()=>{
+ document.querySelector('#qr-title').textContent=button.dataset.title;
+ const img=qrDialog.querySelector('img');img.src=button.dataset.qr;img.alt=button.dataset.title+' 접속 QR 코드';
+ previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';qrDialog.showModal();
+});
+qrDialog.querySelector('.dialog-close').addEventListener('click',()=>qrDialog.close());
+qrDialog.addEventListener('click',event=>{const r=qrDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)qrDialog.close();});
+qrDialog.addEventListener('close',()=>{document.body.style.overflow=previousOverflow;});
