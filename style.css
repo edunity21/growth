@@ -79,3 +79,6 @@ body{background:#fff}.site-header{background:rgba(255,255,255,.97);height:82px}.
 .essay .song-brand p{font-size:12px;line-height:1.5;color:#e5c565;margin:0 0 10px}
 .essay .song-description{font-size:16px;line-height:1.95;color:#fff9df;margin:0 0 22px}
 .essay .song-video>p{font-size:13px;line-height:1.8;color:#fff9df;margin:10px 0 0}
+
+/* Keep the resources headline typography consistent across both lines. */
+.resources-heading h2 em{font-family:inherit;font-weight:inherit;font-style:normal}
