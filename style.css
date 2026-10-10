@@ -21,3 +21,30 @@ body{background:#fff}.site-header{background:rgba(255,255,255,.97);height:82px}.
 @media(max-width:1000px) and (min-width:761px){.illustrated-paragraph{grid-template-columns:112px minmax(0,1fr);gap:19px}.paragraph-art img{width:112px;height:112px}}
 @media(max-width:760px){.illustrated-paragraph{display:block;margin:25px 0 32px}.paragraph-art{display:flex;align-items:center;gap:16px;text-align:left;margin:0 0 15px;padding-bottom:12px;border-bottom:1px solid var(--line)}.paragraph-art img{width:96px;height:96px;flex:0 0 96px}.paragraph-art figcaption{font-size:14px;margin:0;max-width:170px}.essay .illustrated-paragraph>p{font-size:16px;line-height:1.95}}
 @media print{.illustrated-paragraph{break-inside:avoid;grid-template-columns:85px minmax(0,1fr);gap:15px;margin:15px 0}.paragraph-art img{width:85px;height:85px}.paragraph-art figcaption{font-size:9px}}
+
+/* Contextual DFMR resources: scoped to preserve the existing resource directory. */
+.related-material{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);align-items:center;gap:24px;padding:22px;margin:28px 0 38px;border:1px solid #dca9bb;border-radius:20px;background:#f5e6ec;color:#292331;break-inside:avoid}
+.related-material .related-eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;color:#8b2949;margin:0 0 18px}
+.related-material h4{font-family:var(--serif);font-size:23px;line-height:1.5;letter-spacing:-.045em;margin:0 0 16px;overflow-wrap:anywhere}
+.related-note>p:last-child{font-size:15px;line-height:1.95;margin:0;color:#403440;word-break:keep-all;overflow-wrap:anywhere}
+.related-card{min-width:0;border:1px solid #d1bbc4;border-radius:15px;overflow:hidden;background:#fffdfa}
+.related-visual{display:block;position:relative;overflow:hidden;aspect-ratio:16/9;background:#e9dce1}
+.related-photo{display:block;width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.related-visual:hover .related-photo{transform:scale(1.035)}
+.related-play,.related-open{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:50px;height:50px;border:1px solid white;border-radius:50%;background:#aa1749e8;color:white;font-size:24px;padding-left:3px}
+.related-qr{position:absolute;right:10px;bottom:10px;background:white;color:#18131a;border-radius:8px;padding:7px;display:grid;justify-items:center;gap:5px;box-shadow:0 3px 12px #0002}
+.related-qr img{width:58px;height:58px;object-fit:contain}.related-qr>span{font-size:10px;font-weight:700}
+.related-info{padding:18px}.related-info>span{font-size:12px;color:#59434e}.related-info h4{font-size:21px;margin:13px 0}
+.related-action{display:inline-block;border-radius:6px;background:#8b3655;color:white;font-size:15px;font-weight:700;padding:11px 15px;line-height:1.6}.related-action:hover{background:#6e2641}
+.related-material a:focus-visible{outline:3px solid #2257d8;outline-offset:-3px}.related-action:focus-visible{outline-offset:3px}
+.related-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:761px) and (max-width:1100px){.related-material{grid-template-columns:1fr}.related-card{width:100%}}
+@media(max-width:600px){.related-material{grid-template-columns:1fr;padding:17px;gap:20px;border-radius:16px}.related-material h4{font-size:22px}.related-note>p:last-child{font-size:15px}.related-info{padding:18px}.related-qr img{width:54px;height:54px}}
+@media print{.related-material{display:block;border-color:#bbb;padding:14px}.related-card{margin-top:14px}.related-visual{max-width:280px}.related-action{color:black;background:white;border:1px solid #999}}
+
+/* Use the matching right-hand platform page without cropping its contents. */
+.related-platform .related-photo{width:200%;max-width:none;height:100%;margin-left:-100%;object-fit:fill;transform:none}
+.related-platform:hover .related-photo{transform:none}
+.related-archive-cover{height:100%;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:22px 100px 22px 22px;background:#173b45;color:#fff}
+.related-archive-cover>span{font-size:11px;line-height:1.6}.related-archive-cover strong{font-size:clamp(20px,2.3vw,30px);line-height:1.35;letter-spacing:-.04em}
+.related-material[aria-labelledby="related-lyric"] .related-photo,.related-material[aria-labelledby="related-lesson"] .related-photo{object-fit:contain;background:#000}
