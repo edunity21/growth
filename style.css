@@ -48,3 +48,34 @@ body{background:#fff}.site-header{background:rgba(255,255,255,.97);height:82px}.
 .related-archive-cover{height:100%;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:22px 100px 22px 22px;background:#173b45;color:#fff}
 .related-archive-cover>span{font-size:11px;line-height:1.6}.related-archive-cover strong{font-size:clamp(20px,2.3vw,30px);line-height:1.35;letter-spacing:-.04em}
 .related-material[aria-labelledby="related-lyric"] .related-photo,.related-material[aria-labelledby="related-lesson"] .related-photo{object-fit:contain;background:#000}
+
+/* Final invitation after the growth-plan closing statement. */
+.melody-finale{max-width:1100px;margin:0 auto;padding:36px 6vw 48px}
+.melody-finale .related-material{margin:0}
+.melody-visual{aspect-ratio:4/3;background:#fff}
+.melody-visual .related-photo{object-fit:contain;width:100%;height:100%;padding:16px 76px 16px 16px}
+@media(max-width:600px){.melody-finale{padding:28px 6vw 36px}.melody-visual .related-photo{padding-right:65px}}
+
+.melody-visual{aspect-ratio:16/9;background:#181c1e}.melody-visual .related-photo{padding:0;object-fit:contain}
+
+.melody-signature-logo{display:block;width:150px;max-width:100%;height:auto;object-fit:contain;margin:0 0 22px}
+@media(max-width:600px){.melody-signature-logo{width:120px;margin-bottom:18px}}
+
+/* Bold Gothic question and the final Melody Tree signature-song card. */
+.cover-note blockquote,.cover-note blockquote em{font-family:var(--sans);font-weight:800;font-style:normal;letter-spacing:-.045em}
+.song-finale{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);gap:34px;max-width:1200px;margin:48px auto;padding:28px;color:#fff9df;background:linear-gradient(115deg,#30462e,#214337 65%,#416958);border:9px solid #2d4c3b;outline:1px solid #a9984c;outline-offset:-18px;border-radius:26px}
+.song-brand{display:flex;align-items:center;gap:18px;padding-bottom:18px;border-bottom:1px solid #b8a65566}.song-brand>img{width:112px;height:112px;object-fit:contain;border-radius:50%;background:#fff;box-shadow:0 3px 12px #0004}
+.song-brand p{font-size:12px;font-weight:800;letter-spacing:.2em;color:#e5c565;margin:0 0 10px}.song-brand h2{font:italic 42px/1.1 Georgia,serif;margin:0;color:#fff9df}.song-brand h2 em{color:#e5c565;font-weight:400}
+.song-copy h3{font:800 19px/1.6 var(--sans);margin:17px 0 10px}.song-description{font:600 16px/1.95 var(--sans);margin:0 0 22px}
+.song-qr{display:flex;align-items:center;gap:14px;padding:10px;border:1px solid #b8a65577;border-radius:13px;background:#ffffff0b}.song-qr>img{width:90px;height:90px;padding:8px;object-fit:contain;background:white;border-radius:8px}.song-qr strong{display:block;color:#e5c565;font-size:19px;margin-bottom:6px}.song-qr span span{font-size:13px;line-height:1.8}
+.song-video{align-self:center;min-width:0}.song-poster{display:block;position:relative;border:1px solid #b8a655;border-radius:15px;overflow:hidden;background:#181c1e}.song-poster>img{width:100%;height:auto}.song-chip{position:absolute;top:10px;left:10px;background:#214337ed;color:white;padding:8px 12px;border-radius:22px;font-size:13px;font-weight:800}.song-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;display:grid;place-items:center;border-radius:50%;background:#c5a437;color:#173b2a;font-size:31px;padding-left:5px;box-shadow:0 4px 20px #0003}.song-poster:hover .song-play{background:#edcf69}.song-video>p{font-size:13px;line-height:1.8;margin:10px 0 0}.song-video>p>a{color:#e5c565;text-decoration:underline;font-weight:700}.song-finale a:focus-visible{outline-color:#ffe48c}
+@media(max-width:1250px){.song-finale{margin:38px 5vw;gap:25px}.song-brand{gap:12px}.song-brand>img{width:85px;height:85px}.song-brand h2{font-size:34px}}
+@media(max-width:850px){.song-finale{grid-template-columns:1fr;padding:22px;gap:24px}.song-brand>img{width:100px;height:100px}.song-brand h2{font-size:40px}.song-copy h3{font-size:18px}.song-description{font-size:15px}.song-play{width:62px;height:62px;font-size:25px}}
+@media print{.song-finale{break-inside:avoid;color:#182e24;background:#fff;border:1px solid #345}.song-brand h2,.song-brand h2 em,.song-brand p,.song-qr strong,.song-video>p>a{color:#254b35}}
+
+/* Match the full cover headline and place the song beside chapter 3 content. */
+.cover h1 em{font-family:inherit;font-weight:inherit;font-style:normal}
+.essay .song-finale{margin:28px 0 0;padding:22px;grid-template-columns:1fr;gap:24px}
+.essay .song-brand p{font-size:12px;line-height:1.5;color:#e5c565;margin:0 0 10px}
+.essay .song-description{font-size:16px;line-height:1.95;color:#fff9df;margin:0 0 22px}
+.essay .song-video>p{font-size:13px;line-height:1.8;color:#fff9df;margin:10px 0 0}
